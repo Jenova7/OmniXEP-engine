@@ -1,5 +1,5 @@
 #
-# Install OmniEngine as a Cron Job for the current user
+# Install OmniXEP-engine as a Cron Job for the current user
 #
 # Script is written for Linux/Unix, tested on Ubuntu
 # Requires the python-crontab package.
@@ -11,7 +11,7 @@ from crontab import CronTab
 # Setup the cron command to run from the current user's omniEngine directory.
 #
 homeDir=os.environ['HOME']
-engineCommand='python {0}/omniEngine/omniEngine.py >> {1}/omniEngine/logs/omniEngine.log'.format(homeDir,homeDir)
+engineCommand='python {0}/OmniXEP-engine/omniEngine.py >> {1}/OmniXEP-engine/logs/omniEngine.log'.format(homeDir,homeDir)
 engineComment='Update OmniEngne DB using RPC'
 
 #

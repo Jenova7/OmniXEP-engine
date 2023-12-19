@@ -26,7 +26,7 @@ def getTxState(valid):
       return "valid"
     else:
       return "not valid"
-    #there is also pending, but omniEngine won't write that
+    #there is also pending, but OmniXEP-engine won't write that
 
 def getTxClass(txid):
     #Class A = 1 , exodus_marker + no opreturn/no multisig

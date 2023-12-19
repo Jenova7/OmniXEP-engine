@@ -22,9 +22,9 @@ if os.path.isfile(lockFile):
   timestamp=data.split(',')[1]
   #check if the pid is still running
   if os.path.exists("/proc/"+str(pid)):
-    print "Exiting: OmniEngine already running with pid:", pid, "  Last parse started at ", timestamp
+    print "Exiting: OmniXEP-engine already running with pid:", pid, "  Last parse started at ", timestamp
   else:
-    print "Stale OmniEngine found, no running pid:", pid, " Process last started at: ", timestamp
+    print "Stale OmniXEP-engine found, no running pid:", pid, " Process last started at: ", timestamp
     print "Removing lock file and waiting for restart"
     os.remove(lockFile)
   #exit program and wait for next run

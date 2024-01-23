@@ -11,8 +11,8 @@ from crontab import CronTab
 # Setup the cron command to run from the current user's omniEngine directory.
 #
 homeDir=os.environ['HOME']
-engineCommand='python {0}/omniEngine/omniEngine.py >> {1}/omniEngine/logs/omniEngine.log'.format(homeDir,homeDir)
-engineComment='Update OmniEngne DB using RPC'
+engineCommand='python {0}/OmniXEP-engine/omniEngine.py >> {1}/OmniXEP-engine/logs/omniEngine.log'.format(homeDir,homeDir)
+engineComment='Update OmniXEP-engine DB using RPC'
 
 #
 # Access the current users' CronTab
